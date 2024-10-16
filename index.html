@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
+
     <title>zoey</title>
   </head>
   <body>
     <script src="script.js"></script>
+    <div class="header">
+      <a href="index.html"><img src="assets/logo.png" class="logo" /></a>
+      <div class="sideN" onclick="openNav()">
+        <i
+          style="color: white"
+          id="ico"
+          class="fa fa-bars"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div class="nav">
+        <a class="navb" href="">Home</a>
+        <a class="navb" href="">Services</a>
+        <a class="navb" href="">Downloads</a>
+        <a class="navb" href="">About</a>
+        <a class="navb" href="">Contacts</a>
+      </div>
+
+      <div id="sidenav" class="side">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Downloads</a>
+        <a href="#">Contacts</a>
+      </div>
+    </div>
   </body>
 </html>
