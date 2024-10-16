@@ -54,11 +54,17 @@
     margin-bottom: 15px;
   }
 }
+
 .sideN {
   float: right;
   margin-top: 25px;
   font-size: 30px;
   cursor: pointer;
+}
+@media (min-width: 1280px) {
+  .sideN {
+    visibility: hidden;
+  }
 }
 
 .side {
@@ -106,11 +112,5 @@
   }
   .side a {
     font-size: 18px;
-  }
-}
-@media (min-width: 1280px) {
-  .sideN {
-    visibility: hidden;
-    width: 0;
   }
 }
