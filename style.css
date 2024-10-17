@@ -5,7 +5,9 @@
   font-weight: 100;
   font-style: normal;
 }
-
+body {
+  opacity: 0;
+}
 .header {
   max-width: 1904px;
   margin-left: 20rem; /* 32px */
@@ -15,8 +17,6 @@
   .header {
     align-items: center;
     margin-left: auto;
-    margin-inline-end: 2rem;
-    justify-items: center;
   }
   .nav {
     visibility: hidden;
@@ -59,6 +59,7 @@
   float: right;
   margin-top: 25px;
   font-size: 30px;
+  width: 50px;
   cursor: pointer;
 }
 @media (min-width: 1280px) {
@@ -66,7 +67,6 @@
     visibility: hidden;
   }
 }
-
 .side {
   width: 0;
   position: fixed;
@@ -76,22 +76,30 @@
   background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  height: 70%;
-  opacity: 50%;
+  height: 60%;
+  opacity: 75%;
 }
 .side a {
-  padding: 8px 8px 8px 8px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 15px;
+  color: white;
   display: block;
   transition: 0.3s;
   background-color: black;
-  font-weight: 100;
+  font-weight: 50;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
+  height: 50px;
+}
+
+.side .x {
+  font-size: 36px;
+  color: red;
+}
+.side .sideNB {
+  height: fit-content;
+  margin-top: 25px;
 }
 
 .side a:hover {
@@ -99,11 +107,9 @@
 }
 
 .side .closebtn {
-  position: absolute;
-  top: 10px;
-  left: 25px;
-  font-size: 36px;
-  margin-right: 50px;
+  width: fit-content;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 @media screen and (max-height: 450px) {
